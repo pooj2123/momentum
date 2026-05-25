@@ -1,5 +1,5 @@
 import Sidebar from "./Sidebar";
-
+import MobileNav from "./MobileNav";
 export default function AppLayout({
   children,
 }: {
@@ -10,7 +10,11 @@ export default function AppLayout({
       <Sidebar />
 
       <main className="flex-1 min-h-screen p-8">
-        {children}
+      <>
+  {children}
+
+  <MobileNav />
+</>
       </main>
     </div>
   );
